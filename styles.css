@@ -1,0 +1,58 @@
+/* VidLove for TMDB - injected styles */
+
+/* Wrapper for the button that sits next to "Play Trailer". */
+li.vidlove-item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* Base button. Deliberately self-contained so it looks the same on TMDB's
+   dark header (movie/show pages) and on its light content pages (seasons). */
+a.vidlove-btn,
+a.vidlove-btn:visited {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 9999px;
+  background: #01b4e4;
+  color: #06263a !important;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  text-decoration: none !important;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.vidlove-btn:hover,
+a.vidlove-btn:focus-visible {
+  background: #3fcdf5;
+  color: #04202f !important;
+  box-shadow: 0 2px 10px rgba(1, 180, 228, 0.45);
+}
+
+a.vidlove-btn:active {
+  background: #0194bd;
+}
+
+.vidlove-btn .vidlove-icon {
+  display: block;
+  flex: 0 0 auto;
+}
+
+/* Compact variant used on season cards, episode cards and small headers. */
+a.vidlove-btn--sm {
+  gap: 5px;
+  padding: 4px 12px;
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
